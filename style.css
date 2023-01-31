@@ -362,3 +362,60 @@
 	padding: 10px;
 
 }
+
+
+footer{
+	width: 100%;
+	height: 70px;
+/*	position: absolute;*/
+	bottom: 0;
+	left: 0;
+	background: deepskyblue;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 14px;
+	color: #fff;
+	padding: 0 10px;
+	font-family: 'Poppins',sans-serif;
+}
+
+@media (max-width:634px){
+	.container{
+		padding: 10px 20px;
+	}
+	.game-canvas{
+		max-width: 600px;
+		width: 100%;
+		height: auto;
+	}
+	.game{
+		flex-direction: column;
+		height: auto;
+		padding: 15px 0;
+	}
+	.choices{
+		width: 100%;
+		padding: 10px;
+	}
+	.vs{
+		width: 90px;
+	}
+	.win-popup, .lose-popup, .tie-popup{
+		padding: 10px;
+
+
+	}
+	.win span, .lose span, .tie span{
+		font-size: 30px;
+	}
+	.win, .lose, .tie{
+		width: 100%;
+		height: 180px;
+	}
+	.win-toggle, .lose-toggle, .tie-toggle{
+		transition-delay: 1s;
+	}
+
+
+}
