@@ -360,7 +360,10 @@
 	justify-content: center;
 	cursor: default;
 	padding: 10px;
-
+	transform: rotate(-360deg);
+}
+#gif{
+	transform: rotate(-360deg);
 }
 
 
@@ -383,11 +386,13 @@ footer{
 @media (max-width:634px){
 	.container{
 		padding: 10px 20px;
+		height: auto;
 	}
 	.game-canvas{
 		max-width: 600px;
 		width: 100%;
 		height: auto;
+/*		margin-top: 30px;*/
 	}
 	.game{
 		flex-direction: column-reverse;
@@ -415,6 +420,16 @@ footer{
 	}
 	.win-toggle, .lose-toggle, .tie-toggle{
 		transition-delay: 1s;
+	}
+
+	#gif{
+	transform: rotate(-90deg);
+}
+	.user img{
+		transform: rotate(-0deg);
+	}
+	.computer img{
+		transform: rotate(-180deg);
 	}
 
 
