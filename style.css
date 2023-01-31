@@ -390,7 +390,7 @@ footer{
 		height: auto;
 	}
 	.game{
-		flex-direction: column;
+		flex-direction: column-reverse;
 		height: auto;
 		padding: 15px 0;
 	}
