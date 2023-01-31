@@ -171,6 +171,9 @@
 	width: 100%;
 	padding: 5px;
 }
+.choices img:hover{
+	padding: 10px;
+}
 .hide-choices{
 	display: none;
 }
