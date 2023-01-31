@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+</head>
+<body>
+
+
+	<div class="container">
+
+		<div class="game-canvas">
+			<div class="game">
+				<div class="user" id="user">
+					<img class="rock" src="rock.png">
+					<img class="paper" src="paper.png">
+					<img class="scissors" src="scissors.png">
+					<span id="input">?</span>
+				</div>
+
+				<div class="vs">
+					<img src="vs.png">
+				</div>
+
+				<div class="computer" id="computer">
+				<img class="gif" src="random3.gif" style="transform: rotate(-360deg);">
+				</div>
+			</div>
+
+		</div>
+
+
+		<!-- Win Popup -->
+		<div class="win-popup" id="win">
+			<div class="win">
+				<span>You Win!</span>
+				<button onclick="location.reload(this)">Play Again?</button>
+			</div>
+
+		</div>
+
+		<!-- Lose Popup -->
+		<div class="lose-popup" id="lose">
+			<div class="lose">
+				<span>You Lose!</span>
+				<button onclick="location.reload(this)">Play Again?</button>
+			</div>
+
+		</div>
+
+		<!-- Tie Popup -->
+		<div class="tie-popup" id="tie">
+			<div class="tie">
+				<span>Yay Its A Tie!</span>
+				<button onclick="location.reload(this)">Play Again?</button>
+			</div>
+
+		</div>
+
+
+
+		<!-- BUTTON -->
+			<div class="choices" id="choices">
+				<button onclick="Play('rock')" id="rock">
+					<img src="rock.png">
+				</button>
+
+				<button onclick="Play('paper')" id="paper">
+					<img src="paper.png">
+				</button>
+
+				<button onclick="Play('scissors')" id="scissors">
+					<img src="scissors.png">
+				</button>
+			</div>
+	
+
+	</div>
+
+	
+
+</body>
+<script src="main.js"></script>
+</html>

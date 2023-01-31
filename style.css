@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing:border-box;
+}
+.container{
+	width: 100%;
+	height: 100vh;
+/*	background: #003;*/
+	background: url("https://wallpapercave.com/wp/wp8121942.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 30px;
+}
+.game-canvas{
+
+	width: 600px;
+	height: 270px;
+	background: #ffffffba;
+	border-radius: 10px;
+	border: 2px solid #fff;
+	/* From https://css.glass */
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.game{
+	width: 100%;
+	height: 160px;
+/*	background: pink;*/
+	padding: 0 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.user {
+	width: 150px;
+	height: 150px;
+	border-radius: 10px;
+	border: 2px solid #fff;
+	background: #fff;
+	box-shadow: 0 0  10px 1px lightgray inset;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: default;
+
+}
+.user img{
+	width: 100%;
+	transform: rotate(90deg);
+	padding: 5px;
+}
+
+#input{
+	color: deepskyblue;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	font-size: 80px;
+/*	visibility: visible;*/
+}
+.input-hide{
+	visibility: hidden;
+}
+.rock{
+	display: none;
+}
+
+.rock-show{
+	display: block;
+}
+.paper{
+	display: none;
+}
+.paper-show{
+	display: block;
+}
+.scissors{
+	display: none;
+}
+.scissors-show{
+	display: block;
+}
+
+
+
+
+
+
+
+.computer{
+	width: 150px;
+	height: 150px;
+	border-radius: 10px;
+	border: 2px solid #fff;
+	background: #fff;
+	box-shadow: 0 0  10px 1px lightgray inset;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: default;
+}
+.computer span{
+	color: deepskyblue;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	font-size: 80px;
+}
+.computer img{
+	width: 150px;
+	-webkit-transform: scaleX(-1);
+  	transform: scaleX(-1)rotate(90deg);
+  	padding: 5px;
+
+}
+.vs{
+	width: 150px;
+	height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.vs img{
+	width: 100%;
+}
+.choices{
+	width: 400px;
+	height: 120px;
+	background: #fff;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin:30px auto;
+	/* From https://css.glass */
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.choices button{
+	width: 90px;
+	height: 90px;
+	border-radius: 10px;
+	border: 2px solid #fff;
+	background: #fff;
+	box-shadow: 0 0  10px 1px lightgray inset;
+	cursor: pointer;
+}
+.choices img{
+	width: 100%;
+	padding: 5px;
+}
+.hide-choices{
+	display: none;
+}
+
+
+
+/*win Popup*/
+.win-popup{
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	background: #fff;
+	z-index: 2;
+	/* From https://css.glass */
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	visibility: hidden;
+}
+.win{
+	width: 400px;
+	height: 200px;
+	background: #fff;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	font-family: 'Poppins',sans-serif; 
+	box-shadow: 0 0 10px 1px lightgray;
+	border: 1px solid lightgray;
+}
+.win-toggle{
+	visibility: visible;
+	transition-delay:0.3s
+
+}
+
+.win span{
+	font-size: 50px;
+}
+.win button{
+	width: 200px;
+	height: 50px;
+	border-radius: 10px;
+	border: none;
+	background: deepskyblue;
+	color: #fff;
+	font-size: 16px;
+	font-family: 'Poppins',sans-serif;
+
+}
+.win button:hover{
+	background: #00bfffb8;
+}
+
+
+
+/*lose Popup*/
+.lose-popup{
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	background: #fff;
+	z-index: 2;
+	/* From https://css.glass */
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	visibility: hidden;
+}
+.lose{
+	width: 400px;
+	height: 200px;
+	background: #fff;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	font-family: 'Poppins',sans-serif; 
+	box-shadow: 0 0 10px 1px lightgray;
+	border: 1px solid lightgray;
+}
+.lose-toggle{
+	visibility: visible;
+	transition-delay:0.3s
+
+}
+
+.lose span{
+	font-size: 50px;
+}
+.lose button{
+	width: 200px;
+	height: 50px;
+	border-radius: 10px;
+	border: none;
+	background: deepskyblue;
+	color: #fff;
+	font-size: 16px;
+	font-family: 'Poppins',sans-serif;
+
+}
+.lose button:hover{
+	background: #00bfffb8;
+}
+
+
+/*win Popup*/
+.tie-popup{
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	background: #fff;
+	z-index: 2;
+	/* From https://css.glass */
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	visibility: hidden;
+}
+.tie{
+	width: 400px;
+	height: 200px;
+	background: #fff;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	font-family: 'Poppins',sans-serif; 
+	box-shadow: 0 0 10px 1px lightgray;
+	border: 1px solid lightgray;
+}
+.tie-toggle{
+	visibility: visible;
+	transition-delay:0.3s
+}
+
+.tie span{
+	font-size: 50px;
+}
+.tie button{
+	width: 200px;
+	height: 50px;
+	border-radius: 10px;
+	border: none;
+	background: deepskyblue;
+	color: #fff;
+	font-size: 16px;
+	font-family: 'Poppins',sans-serif;
+}
+.tie button:hover{
+	background: #00bfffb8;
+}
+
+
+.gif{
+	border-radius: 10px;
+	border: 2px solid #fff;
+	background: #fff;
+	box-shadow: 0 0  10px 1px lightgray inset;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: default;
+	padding: 10px;
+
+}
