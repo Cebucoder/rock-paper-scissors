@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto&display=swap');
+
 
 *{
 	padding: 0;
@@ -20,14 +20,7 @@
 	justify-content: center;
 	padding: 30px;
 }
-.heading{
-	color: #fff;
-	font-size: 25px;
-	padding: 20px;
-/*	font-family: 'Poppins',sans-serif;*/
-	font-family: 'Fredoka One', cursive;
-	letter-spacing: 4px;
-}
+
 .game-canvas{
 
 	width: 600px;
@@ -384,6 +377,7 @@ footer{
 	left: 0;
 	background: deepskyblue;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	font-size: 13px;
