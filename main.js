@@ -72,7 +72,7 @@ function Play(humanChoice){
 			document.getElementById('computer').innerHTML = `<img src = "${computer}">`;
 
 			
-			win.classList.add("lose-toggle");
+			lose.classList.add("lose-toggle");
 		}
 		else if(computer == 'rock.png'){
 			document.getElementById('computer').innerHTML = `<img src = "${computer}">`;
