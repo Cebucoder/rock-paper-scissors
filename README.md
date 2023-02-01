@@ -1,6 +1,6 @@
 # rock-paper-scissors
 #Hi Good Day!
-#I'm cebucoder!
+@I'm cebucoder!
 
 I created my own version of simple rock-paper-scissors game , this game is very simple and same with other game that your opponent is also e computer,and the game is also responsive a e smaller device. 
 I hope you like it!
