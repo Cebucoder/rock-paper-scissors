@@ -6,6 +6,7 @@ I created my own version of simple rock-paper-scissors game , this game is very 
 I hope you like it!
 
 And also You can copy the code its free
+Please arte my work with star thank you
 
 Sample View
 ![image](https://user-images.githubusercontent.com/55612034/215938998-6ea7070a-7ac4-4335-8266-73dfbcce2a66.png)
