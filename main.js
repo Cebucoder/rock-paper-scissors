@@ -22,7 +22,7 @@ function Play(humanChoice){
 
 
 
-
+	// Paper =========================
 	if (humanChoice == 'paper' ) {
 		paper.classList.add("paper-show");
 		rock.classList.remove("rock-show");
@@ -56,6 +56,7 @@ function Play(humanChoice){
 
 		
 	}
+	// Rock =========================
 	else if (humanChoice == 'rock' ) {
 		rock.classList.add("rock-show");
 		paper.classList.remove("paper-show");
@@ -87,6 +88,7 @@ function Play(humanChoice){
 
 
 	}
+	// Scissors =========================
 	else if (humanChoice == 'scissors' ) {
 
 		rock.classList.remove("rock-show");
