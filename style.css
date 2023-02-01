@@ -19,6 +19,14 @@
 	justify-content: center;
 	padding: 30px;
 }
+.heading{
+	color: #fff;
+	font-size: 25px;
+	padding: 20px;
+/*	font-family: 'Poppins',sans-serif;*/
+	font-family: cursive;
+	text-shadow: 2px 2px grey;
+}
 .game-canvas{
 
 	width: 600px;
@@ -377,7 +385,7 @@ footer{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 14px;
+	font-size: 13px;
 	color: #fff;
 	padding: 0 10px;
 	font-family: 'Poppins',sans-serif;
