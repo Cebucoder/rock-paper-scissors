@@ -80,6 +80,9 @@
 .input-hide{
 	visibility: hidden;
 }
+.input-show{
+	visibility: visible;
+}
 .rock{
 	display: none;
 }
@@ -367,6 +370,144 @@
 #gif{
 	transform: rotate(-360deg);
 }
+
+
+/*history*/
+.history-cont{
+	width: 300px;
+	height: 100vh;
+	position: fixed;
+	left: -300px;
+	opacity: 0;
+	top: 0;
+	background: #fff;
+	/* From https://css.glass */
+	background: rgba(255, 255, 255, 0.5);
+/*	border-radius: 16px;*/
+	border-top-right-radius: 16px;
+	border-bottom-right-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	transition: 0.2s;
+	padding: 80px 5px;
+	font-family: 'Poppins',sans-serif;
+}
+.history-icon{
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	top: 10px;
+	left: 15px;
+	color: #000;
+	font-size: 30px;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: rgba(0, 0, 0, 0.7);
+	border-radius: 50%;
+	transition: 0.4s;
+}
+.history-icon:hover{
+	background: rgba(255, 255, 255, 0.5);
+/*	border-radius: 16px;*/
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(15px);
+	-webkit-backdrop-filter: blur(15px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	transform: rotate(180deg);
+}
+
+.open-History{
+	left: 0;
+	opacity: 1;
+	transition: 0.6;
+}
+
+.oponents{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 25px;
+}
+.oponents span{
+	color: rgba(0, 0, 0, 0.6);
+	font-weight: bolder;
+}
+.previous{
+	width: 100%;
+	height: 400px;
+	max-height: 400px;
+/*	background: pink;*/
+	margin-top: 10px;
+	overflow-y: scroll;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	padding-right: 5px;
+}
+/* width*/
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.3); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fff; 
+  border-radius: 50%;
+}
+.previous li{
+	width: 100%;
+	height: 50px;
+	max-height: 50px;
+	background: rgba(255, 255, 255, 0.5);
+	border-radius: 5px;
+	list-style: none;
+	margin-bottom: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+/*scroes*/
+.score{
+	width: 600px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0  90px;
+}
+.score span{
+	font-size: 40px;
+	font-family: 'Poppins',sans-serif;
+	color: #fff;
+}
+.name{
+	width: 600px;
+	height: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 80px;
+	padding-right: 65px;
+}
+.name span{
+	font-size: 15px;
+	font-family: 'Poppins',sans-serif;
+	color: #fff;
+}
+
+
+
 
 
 footer{
