@@ -222,7 +222,7 @@
 }
 .win-toggle{
 	visibility: visible;
-	transition-delay:0.3s
+	transition-delay:0.1s
 
 }
 
@@ -282,7 +282,7 @@
 }
 .lose-toggle{
 	visibility: visible;
-	transition-delay:0.3s
+	transition-delay:0.1s
 
 }
 
@@ -341,7 +341,7 @@
 }
 .tie-toggle{
 	visibility: visible;
-	transition-delay:0.3s
+	transition-delay:0.1s
 }
 
 .tie span{
@@ -604,7 +604,7 @@ footer{
 		height: 180px;
 	}
 	.win-toggle, .lose-toggle, .tie-toggle{
-		transition-delay: 0.3s;
+		transition-delay: 0.1s;
 	}
 
 	#gif{
