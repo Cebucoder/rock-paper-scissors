@@ -4,6 +4,9 @@ function Play(humanChoice){
 
 	// computer choices
 	const computerChoices = ['rock.png', 'paper.png', 'scissors.png'];
+	// const computerChoices = ['rock.png', 'paper.png', 'scissors.png'];
+
+
 
 	// genearting random computer choices
 	let sampleNum = Math.floor(Math.random() * computerChoices.length);
@@ -23,6 +26,8 @@ function Play(humanChoice){
 	const pscore = document.getElementById("playerScore");
 	const cscore = document.getElementById("computerScore");
 
+	
+	//adding score 
 	let playerScore = parseInt(pscore.innerHTML) || 0;
 	let computerScore = parseInt(cscore.innerHTML) || 0;
 
@@ -34,6 +39,8 @@ function Play(humanChoice){
 		rock.classList.remove("rock-show");
 		scissor.classList.remove("scissors-show");
 
+
+		// score
 		input.classList.add("input-hide");
 		pscore.innerHTML = playerScore;
 		cscore.innerHTML = computerScore;
@@ -47,6 +54,26 @@ function Play(humanChoice){
 
 			// adding tie popup
 			tie.classList.add("tie-toggle");
+
+
+			// ============================================================
+			// to show prevoius matched into history 
+			// code refference  from todo list
+		
+			let history  = document.querySelector("#tied-history").innerHTML;
+			let prev = document.querySelector("#previous");
+			let humanChoice = ['paper.png'];
+			
+			// let previous = document.getElementById("previous").innerHTML = ;
+			let div = document.getElementById('previous').value = `<span>${playerScore}</span><img src = "${humanChoice}"><small>${history}</small><img src = "${computer}"><span>${computerScore}</span>`;
+			let taskitem = document.createElement("li");
+			taskitem.innerHTML = div;
+			prev.appendChild(taskitem);
+			console.log(taskitem+"Is Successfully added to History");
+			
+
+
+		// ============================================================
 	
 			
 		}
@@ -60,6 +87,27 @@ function Play(humanChoice){
 			// score
 			pscore.innerHTML = playerScore + 1;
 			playerScore++;
+
+
+		// ============================================================
+			// to show prevoius matched into history 
+			// code refference  from todo list
+		
+			let history  = document.querySelector("#win-history").innerHTML;
+			let prev = document.querySelector("#previous");
+			let humanChoice = ['paper.png'];
+
+			
+			// let previous = document.getElementById("previous").innerHTML = ;
+			let div = document.getElementById('previous').value = `<span>${playerScore}</span><img src = "${humanChoice}"><small>${history}</small><img src = "${computer}"><span>${computerScore}</span>`;
+			let taskitem = document.createElement("li");
+			taskitem.innerHTML = div;
+			prev.appendChild(taskitem);
+			console.log(taskitem+"Is Successfully added to History");
+			
+
+
+		// ============================================================
 			
 			
 		
@@ -75,6 +123,26 @@ function Play(humanChoice){
 		// score
 			cscore.innerHTML = computerScore + 1;
 			computerScore++;
+
+
+			// ============================================================
+			// to show prevoius matched into history 
+			// code refference  from todo list
+		
+			let history  = document.querySelector("#lose-history").innerHTML;
+			let prev = document.querySelector("#previous");
+			let humanChoice = ['paper.png'];
+			
+			// let previous = document.getElementById("previous").innerHTML = ;
+			let div = document.getElementById('previous').value = `<span>${playerScore}</span><img src = "${humanChoice}"><small>${history}</small><img src = "${computer}"><span>${computerScore}</span>`;
+			let taskitem = document.createElement("li");
+			taskitem.innerHTML = div;
+			prev.appendChild(taskitem);
+			console.log(taskitem+"Is Successfully added to History");
+			
+
+
+		// ============================================================
 
 
 		
@@ -102,12 +170,51 @@ function Play(humanChoice){
 			cscore.innerHTML = computerScore + 1;
 			computerScore++;
 
+
+			// ============================================================
+			// to show prevoius matched into history 
+			// code refference  from todo list
+		
+			let history  = document.querySelector("#lose-history").innerHTML;
+			let prev = document.querySelector("#previous");
+			let humanChoice = ['rock.png'];
+			
+			// let previous = document.getElementById("previous").innerHTML = ;
+			let div = document.getElementById('previous').value = `<span>${playerScore}</span><img src = "${humanChoice}"><small>${history}</small><img src = "${computer}"><span>${computerScore}</span>`;
+			let taskitem = document.createElement("li");
+			taskitem.innerHTML = div;
+			prev.appendChild(taskitem);
+			console.log(taskitem+"Is Successfully added to History");
+			
+
+
+		// ============================================================
+
 			
 		}
 		else if(computer == 'rock.png'){
 			document.getElementById('computer').innerHTML = `<img src = "${computer}">`;
 			
 			tie.classList.add("tie-toggle");
+
+			// ============================================================
+			// to show prevoius matched into history 
+			// code refference  from todo list
+		
+			let history  = document.querySelector("#tied-history").innerHTML;
+			let prev = document.querySelector("#previous");
+			let humanChoice = ['rock.png'];
+			
+			// let previous = document.getElementById("previous").innerHTML = ;
+			let div = document.getElementById('previous').value = `<span>${playerScore}</span><img src = "${humanChoice}"><small>${history}</small><img src = "${computer}"><span>${computerScore}</span>`;
+			let taskitem = document.createElement("li");
+			taskitem.innerHTML = div;
+			prev.appendChild(taskitem);
+			console.log(taskitem+"Is Successfully added to History");
+			
+
+
+		// ============================================================
 			
 		}
 		else if(computer == 'scissors.png'){
@@ -118,6 +225,26 @@ function Play(humanChoice){
 
 			pscore.innerHTML = playerScore + 1;
 			playerScore++;
+
+
+			// ============================================================
+			// to show prevoius matched into history 
+			// code refference  from todo list
+		
+			let history  = document.querySelector("#win-history").innerHTML;
+			let prev = document.querySelector("#previous");
+			let humanChoice = ['rock.png'];
+			
+			// let previous = document.getElementById("previous").innerHTML = ;
+			let div = document.getElementById('previous').value = `<span>${playerScore}</span><img src = "${humanChoice}"><small>${history}</small><img src = "${computer}"><span>${computerScore}</span>`;
+			let taskitem = document.createElement("li");
+			taskitem.innerHTML = div;
+			prev.appendChild(taskitem);
+			console.log(taskitem+"Is Successfully added to History");
+			
+
+
+		// ============================================================
 
 			
 		}
@@ -147,6 +274,26 @@ function Play(humanChoice){
 			pscore.innerHTML = playerScore + 1;
 			playerScore++;
 
+
+			// ============================================================
+			// to show prevoius matched into history 
+			// code refference  from todo list
+		
+			let history  = document.querySelector("#win-history").innerHTML;
+			let prev = document.querySelector("#previous");
+			let humanChoice = ['scissors.png'];
+			
+			// let previous = document.getElementById("previous").innerHTML = ;
+			let div = document.getElementById('previous').value = `<span>${playerScore}</span><img src = "${humanChoice}"><small>${history}</small><img src = "${computer}"><span>${computerScore}</span>`;
+			let taskitem = document.createElement("li");
+			taskitem.innerHTML = div;
+			prev.appendChild(taskitem);
+			console.log(taskitem+"Is Successfully added to History");
+			
+
+
+		// ============================================================
+
 		}
 		else if(computer == 'rock.png'){
 			document.getElementById('computer').innerHTML = `<img src = "${computer}">`;
@@ -157,11 +304,51 @@ function Play(humanChoice){
 			cscore.innerHTML = computerScore + 1;
 			computerScore++;
 
+
+			// ============================================================
+			// to show prevoius matched into history 
+			// code refference  from todo list
+		
+			let history  = document.querySelector("#lose-history").innerHTML;
+			let prev = document.querySelector("#previous");
+			let humanChoice = ['scissors.png'];
+			
+			
+			// let previous = document.getElementById("previous").innerHTML = ;
+			let div = document.getElementById('previous').value = `<span>${playerScore}</span><img src = "${humanChoice}"><small>${history}</small><img src = "${computer}"><span>${computerScore}</span>`;
+			let taskitem = document.createElement("li");
+			taskitem.innerHTML = div;
+			prev.appendChild(taskitem);
+			console.log(taskitem+"Is Successfully added to History");
+			
+
+
+		// ============================================================
+
 		}
 		else if(computer == 'scissors.png'){
 			document.getElementById('computer').innerHTML = `<img src = "${computer}">`;
 			
 			tie.classList.add("tie-toggle");
+
+			// ============================================================
+			// to show prevoius matched into history 
+			// code refference  from todo list
+		
+			let history  = document.querySelector("#tied-history").innerHTML;
+			let prev = document.querySelector("#previous");
+			let humanChoice = ['scissors.png'];
+			
+			// let previous = document.getElementById("previous").innerHTML = ;
+			let div = document.getElementById('previous').value = `<span>${playerScore}</span><img src = "${humanChoice}"><small>${history}</small><img src = "${computer}"><span>${computerScore}</span>`;
+			let taskitem = document.createElement("li");
+			taskitem.innerHTML = div;
+			prev.appendChild(taskitem);
+			console.log(taskitem+"Is Successfully added to History");
+			
+
+
+		// ============================================================
 		}
 
 
@@ -172,15 +359,18 @@ function Play(humanChoice){
 }
 
 
-// // Adding the prevois match to history
+// Adding the prevois match to history
 
 // let previous = document.querySelector("#previous");
 // function Play(){
-// 	let previous document.getElementById('computer').innerHTML = `<img src = "${computer}">`;
+// 	let previous document.getElementById('computer').innerHTML = `${computer} `;
 // 	let taskitem = document.createElement("li");
 // 	taskitem.innerHTML = previous;
 // 	div.appendChild(taskitem);
 // }
+
+// adding the previous matched
+
 
 
 let paper = document.querySelector('.paper');

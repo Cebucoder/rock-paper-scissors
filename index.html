@@ -58,8 +58,8 @@
 		<!-- Win Popup -->
 		<div class="win-popup" id="win">
 			<div class="win">
-				<span>You Win!</span>
-				<button onclick="playAgain1()">Play Again?</button>
+				<span id="win-history">You Win!</span>
+				<button onclick="playAgain1('')">Play Again?</button>
 			</div>
 
 		</div>
@@ -67,7 +67,7 @@
 		<!-- Lose Popup -->
 		<div class="lose-popup" id="lose">
 			<div class="lose">
-				<span>You Lose!</span>
+				<span id="lose-history">You Lose!</span>
 				<button onclick="playAgain2()">Play Again?</button>
 			</div>
 
@@ -76,7 +76,7 @@
 		<!-- Tie Popup -->
 		<div class="tie-popup" id="tie">
 			<div class="tie">
-				<span>Yay Its A Tie!</span>
+				<span id="tied-history">Yay Its A Tie!</span>
 				<button onclick="playAgain3()">Play Again?</button>
 			</div>
 
@@ -118,7 +118,9 @@
 
 		<!-- cotainer wher the previous matched -->
 		<div class="previous" id="previous">
-			<li></li>
+			<ul>
+			<!-- <li></li> -->
+			</ul>
 		</div>
 	</div>
 

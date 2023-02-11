@@ -446,7 +446,7 @@
 	overflow-y: scroll;
 	display: flex;
 	flex-direction: column;
-	position: relative;
+/*	position: relative;*/
 	padding-right: 5px;
 }
 /* width*/
@@ -462,7 +462,7 @@
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #fff; 
-  border-radius: 50%;
+  border-radius: 50px;
 }
 .previous li{
 	width: 100%;
@@ -475,6 +475,33 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px -1px lightgray;
+	font-size: 13px;
+	padding: 5px 0;
+}
+
+.previous  img{
+	width: 40px;
+/*	background: pink;*/
+	padding: 5px;
+	border-radius: 5px;
+	background: rgba(255, 255, 255, 1);
+	border: 1px solid #fff;
+	box-shadow: 0 0 5px -1px grey;
+
+}
+.previous span{
+	color:rgba(0, 0, 0, 0.7);
+	font-weight: bolder;
+}
+.previous small{
+	padding: 0 5px;
+	font-weight: bolder;
+	color:rgba(0, 0, 0, 0.7);
+	border-left: 2px solid #fff;
+	border-right: 2px solid #fff;
+
 }
 
 /*scroes*/
