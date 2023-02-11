@@ -19,6 +19,7 @@
 	align-items: center;
 	justify-content: center;
 	padding: 30px;
+/*	position: relative;*/
 }
 
 .game-canvas{
@@ -438,6 +439,7 @@
 	align-items: center;
 	justify-content: space-between;
 	padding: 0 25px;
+/*	position: absolute;*/
 }
 .oponents span{
 	color: rgba(0, 0, 0, 0.6);
@@ -514,31 +516,32 @@
 
 /*scroes*/
 .score{
-	width: 600px;
-	height: 50px;
+
 	display: flex;
 	align-items: center;
+	flex-direction: column;
 	justify-content: space-between;
-	padding: 0  90px;
+
 }
 .score span{
 	font-size: 40px;
 	font-family: 'Poppins',sans-serif;
 	color: #fff;
 }
-.name{
-	width: 600px;
-	height: 20px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding-left: 80px;
-	padding-right: 65px;
-}
+
 .name span{
 	font-size: 15px;
 	font-family: 'Poppins',sans-serif;
 	color: #fff;
+}
+.scoreboard{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+/*	background: pink;*/
 }
 
 
@@ -609,6 +612,12 @@ footer{
 	}
 	.computer img{
 		transform: rotate(-180deg);
+	}
+	.oponents{
+		width: 100%;
+	}
+	.name{
+		display: ;
 	}
 
 
