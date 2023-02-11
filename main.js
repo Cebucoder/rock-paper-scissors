@@ -359,25 +359,14 @@ function Play(humanChoice){
 }
 
 
-// Adding the prevois match to history
-
-// let previous = document.querySelector("#previous");
-// function Play(){
-// 	let previous document.getElementById('computer').innerHTML = `${computer} `;
-// 	let taskitem = document.createElement("li");
-// 	taskitem.innerHTML = previous;
-// 	div.appendChild(taskitem);
-// }
-
-// adding the previous matched
 
 
+// this section is to remove the prevois player choices
 
 let paper = document.querySelector('.paper');
 let rock = document.querySelector('.rock');
 let scissor = document.querySelector('.scissors');
 let input = document.getElementById("input");
-
 
 
 function playAgain1(){
@@ -386,6 +375,7 @@ function playAgain1(){
 	rock.classList.remove("rock-show");
 	scissor.classList.remove("scissors-show");
 	input.classList.remove("input-hide");
+
 	
 
 }
@@ -396,6 +386,8 @@ function playAgain2(){
 	scissor.classList.remove("scissors-show");
 	input.classList.remove("input-hide");
 
+
+
 }
 function playAgain3(){
 	tie.classList.remove("tie-toggle");
@@ -403,6 +395,8 @@ function playAgain3(){
 	rock.classList.remove("rock-show");
 	scissor.classList.remove("scissors-show");
 	input.classList.remove("input-hide");
+
+
 
 }
 
