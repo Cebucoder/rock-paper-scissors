@@ -69,7 +69,7 @@ function Play(humanChoice){
 			let taskitem = document.createElement("li");
 			taskitem.innerHTML = div;
 			prev.appendChild(taskitem);
-			console.log(taskitem+"Is Successfully added to History");
+			console.log(div+"Is Successfully added to History");
 			
 
 
@@ -103,7 +103,7 @@ function Play(humanChoice){
 			let taskitem = document.createElement("li");
 			taskitem.innerHTML = div;
 			prev.appendChild(taskitem);
-			console.log(taskitem+"Is Successfully added to History");
+			console.log(div+"Is Successfully added to History");
 			
 
 
@@ -138,7 +138,7 @@ function Play(humanChoice){
 			let taskitem = document.createElement("li");
 			taskitem.innerHTML = div;
 			prev.appendChild(taskitem);
-			console.log(taskitem+"Is Successfully added to History");
+			console.log(div+"Is Successfully added to History");
 			
 
 
@@ -184,7 +184,7 @@ function Play(humanChoice){
 			let taskitem = document.createElement("li");
 			taskitem.innerHTML = div;
 			prev.appendChild(taskitem);
-			console.log(taskitem+"Is Successfully added to History");
+			console.log(div+"Is Successfully added to History");
 			
 
 
@@ -210,7 +210,7 @@ function Play(humanChoice){
 			let taskitem = document.createElement("li");
 			taskitem.innerHTML = div;
 			prev.appendChild(taskitem);
-			console.log(taskitem+"Is Successfully added to History");
+			console.log(div+"Is Successfully added to History");
 			
 
 
@@ -240,7 +240,7 @@ function Play(humanChoice){
 			let taskitem = document.createElement("li");
 			taskitem.innerHTML = div;
 			prev.appendChild(taskitem);
-			console.log(taskitem+"Is Successfully added to History");
+			console.log(div+"Is Successfully added to History");
 			
 
 
@@ -288,7 +288,7 @@ function Play(humanChoice){
 			let taskitem = document.createElement("li");
 			taskitem.innerHTML = div;
 			prev.appendChild(taskitem);
-			console.log(taskitem+"Is Successfully added to History");
+			console.log(div+"Is Successfully added to History");
 			
 
 
@@ -312,14 +312,14 @@ function Play(humanChoice){
 			let history  = document.querySelector("#lose-history").innerHTML;
 			let prev = document.querySelector("#previous");
 			let humanChoice = ['scissors.png'];
-			
+
 			
 			// let previous = document.getElementById("previous").innerHTML = ;
 			let div = document.getElementById('previous').value = `<span>${playerScore}</span><img src = "${humanChoice}"><small>${history}</small><img src = "${computer}"><span>${computerScore}</span>`;
 			let taskitem = document.createElement("li");
 			taskitem.innerHTML = div;
 			prev.appendChild(taskitem);
-			console.log(taskitem+"Is Successfully added to History");
+			console.log(div+"Is Successfully added to History");
 			
 
 
@@ -344,7 +344,7 @@ function Play(humanChoice){
 			let taskitem = document.createElement("li");
 			taskitem.innerHTML = div;
 			prev.appendChild(taskitem);
-			console.log(taskitem+"Is Successfully added to History");
+			console.log(div+"Is Successfully added to History");
 			
 
 
